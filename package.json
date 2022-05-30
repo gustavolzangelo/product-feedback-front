@@ -9,7 +9,9 @@
     "lint": "lint-staged",
     "prepare": "husky install",
     "prettier": "prettier --check .",
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest",
+    "eslint": "eslint --fix --max-warnings=0"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -22,6 +24,7 @@
     "@next/eslint-plugin-next": "^12.1.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
+    "@types/jest": "^27.5.1",
     "@types/node": "17.0.36",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
@@ -32,9 +35,11 @@
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.4.5",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-testing-library": "^5.5.1",
     "husky": "^8.0.0",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
