@@ -43,7 +43,7 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright
-        run: pnpm playwright install
+        run: npx playwright install --with-deps
 
       - name: Build
         run: pnpm run build
