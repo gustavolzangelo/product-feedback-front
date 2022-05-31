@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "lint-staged",
+    "lint": "eslint --fix --max-warnings=0",
+    "lint-staged": "lint-staged",
     "prepare": "husky install",
     "prettier": "prettier --check .",
-    "test:only-changed": "jest --onlyChanged",
-    "test:coverage": "jest --onlyChanged --coverage",
+    "test-unit": "jest --coverage",
+    "test-unit:only-changed": "jest --onlyChanged",
     "eslint": "eslint --fix --max-warnings=0",
-    "test:e2e": "playwright test"
+    "test-e2e": "playwright test"
   },
   "dependencies": {
     "next": "12.1.6",
