@@ -50,6 +50,9 @@ jobs:
 
       - name: Test unit
         run: pnpm run test-unit
+        
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
 
       - name: Test e2e
         run: pnpm run test-e2e
