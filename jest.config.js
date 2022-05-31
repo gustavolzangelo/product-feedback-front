@@ -23,7 +23,11 @@ const customJestConfig = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-  coveragePathIgnorePatterns: ['<rootDir>/pages/_app.tsx'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/pages/_app.tsx',
+    '<rootDir>/__tests__/',
+    '<rootDir>/playwright.config.ts',
+  ],
   testPathIgnorePatterns: ['<rootDir>/__tests__/e2e/'],
   coverageThreshold: {
     global: {
