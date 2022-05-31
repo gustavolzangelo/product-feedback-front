@@ -24,6 +24,7 @@ const customJestConfig = {
     '!**/vendor/**',
   ],
   coveragePathIgnorePatterns: ['<rootDir>/pages/_app.tsx'],
+  testPathIgnorePatterns: ['<rootDir>/__tests__/e2e/'],
   coverageThreshold: {
     global: {
       lines: 90,

@@ -11,7 +11,8 @@
     "prettier": "prettier --check .",
     "test": "jest --passWithNoTests",
     "test:coverage": "jest",
-    "eslint": "eslint --fix --max-warnings=0"
+    "eslint": "eslint --fix --max-warnings=0",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -22,6 +23,7 @@
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
     "@next/eslint-plugin-next": "^12.1.6",
+    "@playwright/test": "^1.22.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^27.5.1",
