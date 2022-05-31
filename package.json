@@ -9,8 +9,8 @@
     "lint": "lint-staged",
     "prepare": "husky install",
     "prettier": "prettier --check .",
-    "test": "jest --passWithNoTests",
-    "test:coverage": "jest",
+    "test:only-changed": "jest --onlyChanged",
+    "test:coverage": "jest --onlyChanged --coverage",
     "eslint": "eslint --fix --max-warnings=0",
     "test:e2e": "playwright test"
   },
