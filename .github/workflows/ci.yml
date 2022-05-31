@@ -64,6 +64,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
         with:
           args: >
+            -Dsonar.organization=gustavolzangelo
+            -Dsonar.projectKey=gustavolzangelo_product-feedback-front
             -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
 
   lint:
