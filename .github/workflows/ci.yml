@@ -120,6 +120,9 @@ jobs:
           
       - name: Install deps
         run: pnpm install
+        
+      - name: Build
+        run: pnpm build
           
       - name: run Lighthouse CI
         run: |

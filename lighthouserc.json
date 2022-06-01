@@ -14,7 +14,7 @@
       }
     },
     "collect": {
-      "startServerCommand": "pnpm dev",
+      "startServerCommand": "pnpm start",
       "url": ["http://localhost:3000"],
       "startServerReadyTimeout": "30000",
       "settings": {
