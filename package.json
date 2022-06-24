@@ -16,9 +16,14 @@
     "test-e2e": "playwright test"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^6",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-query": "^3.39.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
