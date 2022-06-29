@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "testing-library"],
+  "plugins": ["@typescript-eslint", "testing-library", "sonarjs", "prettier"],
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
@@ -9,6 +9,7 @@
     "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:sonarjs/recommended",
     "prettier"
   ],
   "overrides": [
@@ -35,6 +36,14 @@
     }
   ],
   "rules": {
-    "no-console": "error"
+    "no-console": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false
+      }
+    ]
   }
 }
