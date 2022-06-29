@@ -62,11 +62,11 @@ const Login = () => {
     e?.preventDefault()
     authMutationLogin.mutate(data)
   }
-
-  function ms(hours: number, minutes: number, seconds: number) {
+  function ms(hours, minutes, seconds) {
     return ((hours * 60 + minutes) * 60 + seconds) * 1000
   }
   console.log(ms(1, 1, 1))
+
   return (
     <>
       <Head>
@@ -81,7 +81,6 @@ const Login = () => {
           flexDirection="column"
         >
           <form onSubmit={handleSubmit(onSubmit)}>
-            {console.log(ms(1, 1, 1))}
             <VStack gap="4">
               <FormControl isInvalid={!!errors.username}>
                 <FormLabel htmlFor="username">Usuário</FormLabel>
