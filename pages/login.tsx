@@ -66,6 +66,7 @@ const Login = () => {
     return ((hours * 60 + minutes) * 60 + seconds) * 1000
   }
   console.log(ms(1, 1, 1))
+  console.log(ms(1, 1, 1))
 
   return (
     <>
