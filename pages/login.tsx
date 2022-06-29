@@ -62,12 +62,6 @@ const Login = () => {
     e?.preventDefault()
     authMutationLogin.mutate(data)
   }
-  function ms(hours: number, minutes: number, seconds: number) {
-    return ((hours * 60 + minutes) * 60 + seconds) * 1000
-  }
-  console.log(ms(1, 1, 1))
-  console.log(ms(1, 1, 1))
-  console.log(ms(1, 1, 1))
 
   return (
     <>
