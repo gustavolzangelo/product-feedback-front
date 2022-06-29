@@ -29,11 +29,6 @@ const customJestConfig = {
     '<rootDir>/playwright.config.ts',
   ],
   testPathIgnorePatterns: ['<rootDir>/__tests__/e2e/'],
-  coverageThreshold: {
-    global: {
-      lines: 90,
-    },
-  },
   testEnvironment: 'jest-environment-jsdom',
 }
 
