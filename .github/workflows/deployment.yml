@@ -57,4 +57,4 @@ jobs:
         with:
           node-version: 12.x
       - name: Deploy
-        run: aws ecs update-service --cluster product-feedback-app --service product-feedback-app --desired-count 2 --force-new-deployment
+        run: aws ecs update-service --cluster cluster-product-feedback-app-1 --service product-feedback-app --desired-count 2 --force-new-deployment
