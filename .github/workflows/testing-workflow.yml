@@ -1,0 +1,16 @@
+name: Print Environments
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_environments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Environments
+        run: |
+          echo "Printing all environment variables:"
+          env
