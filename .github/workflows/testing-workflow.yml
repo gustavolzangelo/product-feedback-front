@@ -9,6 +9,7 @@ on:
 jobs:
   print_environments:
     runs-on: ubuntu-latest
+    environment: main
     steps:
       - name: Print Environments
         run: echo "The value of MY_VAR is ${{ vars }} ${{ vars.TESTING }}"
