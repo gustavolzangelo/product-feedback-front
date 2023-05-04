@@ -11,6 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Environments
-        run: |
-          echo "Printing all environment variables:"
-          vars
+        run: echo "The value of MY_VAR is ${{ env.TESTING }}"
