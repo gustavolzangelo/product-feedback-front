@@ -5,13 +5,10 @@ on:
   push:
     branches:
       - main
-      
-env:
-  TESTING: TESTING
 
 jobs:
   print_environments:
     runs-on: ubuntu-latest
     steps:
       - name: Print Environments
-        run: echo "The value of MY_VAR is ${{ env.TESTING }}"
+        run: echo "The value of MY_VAR is ${{ $TESTING }}"
