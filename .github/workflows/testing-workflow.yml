@@ -7,7 +7,7 @@ on:
       - main
       
 env:
-  TESTING: ${{ env.TESTING }}
+  TESTING: TESTING
 
 jobs:
   print_environments:
