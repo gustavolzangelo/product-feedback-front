@@ -13,4 +13,4 @@ jobs:
       - name: Print Environments
         run: |
           echo "Printing all environment variables:"
-          env
+          vars
