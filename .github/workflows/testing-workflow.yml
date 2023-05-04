@@ -9,7 +9,7 @@ on:
 jobs:
   print_environments:
     runs-on: ubuntu-latest
-    environment: main
+    environment: ${{ github.ref == 'refs/heads/main' && 'main' || 'other' }}
     steps:
       - name: Print Environments
         run: echo "The value of MY_VAR is ${{ vars }} ${{ vars.TESTING }}"
