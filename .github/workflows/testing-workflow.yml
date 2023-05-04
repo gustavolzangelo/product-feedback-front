@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Environments
-        run: echo "The value of MY_VAR is ${{ vars }}"
+        run: echo "The value of MY_VAR is ${{ vars }} ${{ vars.TESTING }}"
