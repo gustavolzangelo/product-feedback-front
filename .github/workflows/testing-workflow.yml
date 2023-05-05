@@ -11,5 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{ github.ref == 'refs/heads/testing' && 'main' || 'testing' }}
     steps:
+    
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+        with:
+          files: |
+            pages/**            
       - name: Print Environments
         run: echo "The value of MY_VAR is ${{ vars }} ${{ vars.TESTING }}"
+      - name: No changes to design system
+        if: steps.changed-files-specific.outputs.any_changed == 'false'
+        run: echo "Chromatic not run because the design system did not change"
