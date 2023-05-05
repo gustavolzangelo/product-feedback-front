@@ -22,8 +22,8 @@ jobs:
           files: |
             pages/**            
       - name: Print Environments
-        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: echo "The value of MY_VAR is ${{ vars }} ${{ vars.TESTING }}"
       - name: No changes to design system
-        if: steps.changed-files-specific.outputs.any_changed == 'false'
+        if: steps.changed-files.outputs.any_changed == 'false'
         run: echo "Chromatic not run because the design system did not change"
